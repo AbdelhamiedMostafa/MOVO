@@ -88,8 +88,10 @@
 
 /*welcome section style*/
 	div.welcome-msg{
-		margin-left: 7vw;
 	    font-size: 28px;
+	}
+	section.welcome{
+		margin-left: 7vw;
 	    margin-top: 150px;
 	}
 	span.bold{
