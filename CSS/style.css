@@ -1,16 +1,17 @@
 /*navbar style*/
 	header{
-		background: url(https://d2kektcjb0ajja.cloudfront.net/images/posts/feature_images/000/000/072/large-1466557422-feature.jpg?1466557422);
+		position: relative;
+		background:linear-gradient(#000000cc,#000000cc), url("http://digitalspyuk.cdnds.net/17/28/980x490/landscape-1499785257-stranger-things-2-poster-crop.jpg");
     background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-
 		margin-bottom: 20px;
 	}
+
 	/*reseting bootstrap a tag*/
 		nav a,nav a:hover{
 			text-decoration: none;
-			color: black;
+			color: #eee;
 		}
 		.card{
 			border: 0px;
@@ -23,11 +24,10 @@
 	/**/
 		ul{
 			list-style-type: none;
-		    padding: 0;
-		    margin: 0;
-		    overflow: hidden;
-		    background-color: #efefef;
-		    border-bottom:2px solid #7d8488;
+	    padding: 0;
+	    margin: 0;
+	    overflow: hidden;
+			float: right;
 		}
 		.logo{
 			float: left;
@@ -40,21 +40,18 @@
 		}
 		li{
 			float: left;
-			overflow: hidden;
-			padding: 16px 0px;
+	    padding: 10px 0px 5px;
+	    margin: 10px 10px;
 		}
 		li:hover{
-	    background-color: #e0e0e0;
+			border-bottom: 1px solid #32bf91;
 		}
 		li a{
-			padding: 21px 24px;
-			font-size: 18px;
+	    font-size: 18px;
+			padding: 10px;
 		}
-		.active,.active:hover{
-			background-color: #7d8488;
-		}
-		.active a{
-			color: #eee;
+		.active{
+			border-bottom: 1px solid #32bf91;
 		}
 		#more{
 			display: none;
@@ -108,14 +105,44 @@
 /*welcome section style*/
 	div.welcome-msg{
 		color: #efefef;
-    font-size: 28px;
+    font-size: 36px;
 	}
 	section.welcome{
-    padding: 275px 7vw;
+    padding: 200px 7vw;
 	}
 	span.bold{
 		font-weight: bold;
 	}
+
+	.btns_container{
+		text-align: center;
+    margin-top: 150px;
+	}
+	.btn {
+    margin: 0 40px;
+    padding: 10px 30px;
+    border-radius: 0;
+    transition: 200ms ease-in-out;
+		border: 2px solid rgb(221,221,221);
+
+	}
+	.main_btn {
+    border: 2px solid #32bf91;
+    color: #eee;
+    background: transparent;
+    border-radius: 100px;
+	}
+	.main_btn:hover {
+    background-color: #32bf91;
+    border-radius: 0px;
+	}
+	.sec_btn:hover {
+    background-color: #32bf91;
+		border-radius: 100px;
+		border-color: #32bf91;
+		color: #eee;
+	}
+
 /*responsive*/
 	@media only screen and (max-width: 780px) {
 		div.welcome-msg{
@@ -154,7 +181,9 @@ h2.sec_title{
 	padding: 5px;
 }
 .card:hover{
-  box-shadow: 0px 5px 20px 0px #4c5a5d36;
+	box-shadow: 0px 5px 20px 0px #4c5a5d36;
+}
+.card:hover, .heart_container img:hover{
 	z-index: 2;
 	-webkit-transition: all 250ms ease-in-out;
 	-webkit-transform: scale(1.17);
@@ -165,7 +194,7 @@ h2.sec_title{
 	transition: all 250ms ease-in-out;
 	transform: scale(1.17);
 }
-.card{
+.card, .heart_container img{
 	-webkit-transition: all 250ms ease-in-out;
   -webkit-transform: scale(1);
   -ms-transition: all 250ms ease-in-out;
@@ -176,9 +205,26 @@ h2.sec_title{
   transform: scale(1);
 	cursor: pointer;
 }
+.card img{
+  height: 500px;
+}
 /*  */
 
-
+/* donate sec */
+.donate_text_container{
+  margin-top: 20px;
+}
+.donate_text_container p{
+	margin: 40px;
+	word-spacing: 5px;
+	line-height: 25px;
+}
+.donate_btn{
+	color: #222;
+}
+.donate_btn:hover{
+	color:#eee;
+}
 /* footer */
 
 
