@@ -58,12 +58,13 @@
 			font-size: 20px;
 	    margin: 10px;
 	    float: right;
-	    padding: 5px 9px;
+	    padding: 5px 10px;
 	    border-radius: 30px;
 	    cursor: pointer;
+			color: #eee;
 		}
 		#more:hover{
-			background-color: #e0e0e0;
+			background-color: #32bf91;
 		}
 		/*responsive*/
 		@media only screen and (max-width: 780px) {
@@ -75,6 +76,7 @@
 				display: inline-block;
 			}
 			ul{
+				float: none;
 				text-align: center;
 				font-size: 0px;
 			}
@@ -87,10 +89,15 @@
 			li{
 				display: none;
 				clear: both;
+				margin: 10px 40%;
+				border: 1px solid transparent;
 			}
 			ul{
 				text-align: center;
-				font-size: 0px;
+		    font-size: 0px;
+		    width: 100%;
+		    position: absolute;
+		    background: #444444ee;
 			}
 			#more{
 				display: block;

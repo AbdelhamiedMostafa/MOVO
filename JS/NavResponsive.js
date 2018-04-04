@@ -3,8 +3,12 @@ $(document).ready(function(){
 });
 
 function toggleNav(){
-  if($(".navItem").is(":hidden"))
+  if($(".navItem").is(":hidden")){
     $(".navItem").addClass( "show" );
-  else
+    $("nav").css("background-color","#555555aa");
+  }
+  else{
     $(".navItem").removeClass( "show" );
+    $("nav").css("background-color","transparent");
+  }
 }
