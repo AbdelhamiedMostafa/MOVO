@@ -16,10 +16,14 @@
 		.card{
 			border: 0px;
 			padding: 0;
-			margin:0 15px;
+			margin:0 0.7vw;
 		}
 		.container{
 			padding: 0px;
+		}
+		.row{
+			margin-left: 0px;
+			margin-right: 0px;
 		}
 	/**/
 		ul{
@@ -151,24 +155,31 @@
 	}
 
 /*responsive*/
-	@media only screen and (max-width: 780px) {
-		div.welcome-msg{
-    	font-size: 24px;
-		}
+@media only screen and (max-width: 780px) {
+	div.welcome-msg{
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 625px) {
+	div.welcome-msg{
+		font-size: 16px;
+	}
+	.btn{
+		margin: 0 1.7vw;
 	}
 
-	@media only screen and (max-width: 625px) {
-		div.welcome-msg{
-    	font-size: 18px;
-		}
-
-	}
+}
+.donate_btns_container{
+	margin-top: 20px;
+}
 /*  */
 
 /* latest_movies sec */
 
 h2.sec_title{
 	text-align: center;
+	font-size: 3vw;
 }
 
 .line{
@@ -177,10 +188,11 @@ h2.sec_title{
 	background: #ddd;
 	text-align: center;
 	margin-left: 47%;
-	margin-bottom: 100px;
+	margin-bottom: 10vw;
 }
 .cards{
-  margin-bottom: 100px;
+  margin-bottom: 10vw;
+
 }
 .movie_name{
 	text-align: center;
@@ -213,7 +225,24 @@ h2.sec_title{
 	cursor: pointer;
 }
 .card img{
-  height: 500px;
+  height: 30vw;
+}
+
+/*responsive*/
+@media only screen and (max-width: 780px) {
+	h2.sec_title{
+		font-size: 4vw;
+	}
+}
+@media only screen and (max-width: 625px) {
+	h2.sec_title{
+		font-size: 5.5vw;
+	}
+}
+@media only screen and (max-width: 400px) {
+	h2.sec_title{
+		font-size: 6vw;
+	}
 }
 /*  */
 
@@ -222,15 +251,54 @@ h2.sec_title{
   margin-top: 20px;
 }
 .donate_text_container p{
-	margin: 40px;
+	margin-left: 4vw;
+	margin-top: 5vw;
 	word-spacing: 5px;
-	line-height: 25px;
+	line-height: 3vw;
+	font-size: 1.7vw;
+}
+.donate_text_container h4{
+	font-size: 2vw;
 }
 .donate_btn{
 	color: #222;
 }
 .donate_btn:hover{
 	color:#eee;
+}
+
+@media only screen and (max-width:780px) {
+	.donate_text_container h4{
+		font-size: 2.5vw;
+	}
+	.donate_text_container p{
+		font-size: 1.7vw;
+	}
+}
+@media only screen and (max-width:625px) {
+	.donate_text_container h4{
+		font-size: 3vw;
+	}
+	.donate_text_container p{
+		font-size: 2vw;
+	}
+}
+@media only screen and (max-width:500px) {
+	.donate_text_container h4{
+		font-size: 4vw;
+	}
+	.donate_text_container p{
+		font-size: 2.7vw;
+	}
+}
+
+@media only screen and (max-width:350px) {
+	.donate_text_container h4{
+		font-size: 4vw;
+	}
+	.donate_text_container p{
+		font-size: 3vw;
+	}
 }
 /* footer */
 
@@ -248,17 +316,19 @@ footer{
 
 .quote{
 	font-size: 24px;
-	margin-bottom: 25px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
+.follow{
+	margin-bottom: 20px;
+}
 .social_container{
-	font-size: 48px;
+	font-size: 4.5vw;
 	margin-bottom: 25px;
 }
 
 .social_container i {
-  margin: 0 50px;
+  margin: 0 5vw;
 }
 
 .simple_nav{
@@ -280,6 +350,19 @@ footer{
 }
 
 
+
+@media only screen and (max-width:500px) {
+	.author, .copyrights{
+		font-size: 2.5vw;
+	}
+
+}
+@media only screen and (max-width:400px) {
+	.author, .copyrights{
+		font-size: 2.4vw;
+	}
+
+}
 
 
 
