@@ -1,0 +1,15 @@
+@mixin logo-typo {
+  font: bold 28px sans-serif;
+  letter-spacing: 5px;
+}
+@mixin nav-link-typo {
+  font-size: 18px;
+}
+@mixin line-typo {
+  width: 6%;
+	height: 2px;
+	background: #ddd;
+	text-align: center;
+	margin-left: 47%;
+	margin-bottom: 10vw;
+}

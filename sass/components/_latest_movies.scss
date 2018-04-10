@@ -1,0 +1,29 @@
+h2.sec_title{
+	text-align: center;
+	font-size: 3vw;
+}
+.line{
+	@include line-typo;
+}
+.cards{
+  margin-bottom: 10vw;
+}
+.movie_name{
+	text-align: center;
+	background-color: $white;
+	padding: 5px;
+}
+.card:hover{
+	box-shadow: 0px 5px 20px 0px $shadow;
+}
+.card:hover, .heart_container img:hover{
+	z-index: 2;
+	@include scale_anim(1.17, 250ms);
+}
+.card, .heart_container img{
+  @include scale_anim(1, 250ms);
+	cursor: pointer;
+}
+.card img{
+  height: 30vw;
+}

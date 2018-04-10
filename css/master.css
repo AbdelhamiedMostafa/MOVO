@@ -1,0 +1,189 @@
+nav a, nav a:hover {
+  text-decoration: none;
+  color: #eee; }
+
+.card {
+  border: 0px;
+  padding: 0;
+  margin: 0 0.7vw; }
+
+.container {
+  padding: 0px; }
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.main_btn:hover {
+  background-color: #32bf91;
+  border-radius: 0px; }
+
+.sec_btn:hover {
+  background-color: #32bf91;
+  border-radius: 100px;
+  border-color: #32bf91;
+  color: #EEE; }
+
+header {
+  position: relative;
+  background: linear-gradient(#444444aa, #444444aa), url("http://digitalspyuk.cdnds.net/17/28/980x490/landscape-1499785257-stranger-things-2-poster-crop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px; }
+
+@media only screen and (max-width: 780px) {
+  nav li {
+    float: none;
+    display: inline-block; }
+  nav ul {
+    float: none;
+    text-align: center; } }
+
+@media only screen and (max-width: 625px) {
+  nav li {
+    display: none;
+    clear: both;
+    margin: 10px 40%;
+    border: 1px solid transparent; }
+  nav ul {
+    text-align: center;
+    font-size: 0px;
+    width: 100%;
+    position: absolute;
+    background: #444444aa; }
+  nav #more {
+    display: block; }
+  nav .show {
+    display: block; } }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  float: right;
+  z-index: 10; }
+
+.logo {
+  float: left;
+  padding: 15px;
+  font: bold 28px sans-serif;
+  letter-spacing: 5px; }
+  @media only screen and (max-width: 780px) {
+    .logo {
+      display: none; } }
+  @media only screen and (max-width: 625px) {
+    .logo {
+      float: none;
+      display: inline-block; } }
+
+li {
+  float: left;
+  padding: 10px 0px 5px;
+  margin: 10px; }
+
+li:hover, .active {
+  border-bottom: 1px solid #32bf91; }
+
+li a {
+  padding: 10px;
+  font-size: 18px; }
+
+#more {
+  display: none;
+  font-size: 20px;
+  margin: 10px;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #EEE; }
+
+#more:hover {
+  background-color: #32bf91; }
+
+section.welcome {
+  padding: 200px 7vw; }
+  @media only screen and (max-width: 780px) {
+    section.welcome .welcome-msg {
+      font-size: 24px; } }
+  @media only screen and (max-width: 625px) {
+    section.welcome .welcome-msg {
+      font-size: 16px; }
+    section.welcome .btn {
+      margin: 0 1.7vw; } }
+
+div.welcome-msg {
+  color: #EEE;
+  font-size: 36px; }
+
+span.bold {
+  font-weight: bold; }
+
+.btns_container {
+  text-align: center;
+  margin-top: 150px; }
+
+.btn {
+  margin: 0 40px;
+  padding: 10px 30px;
+  transition: 200ms ease-in-out; }
+
+.main_btn {
+  border: 2px solid #32bf91;
+  color: #EEE;
+  background: transparent;
+  border-radius: 100px; }
+
+.sec_btn {
+  border-radius: 0;
+  border: 2px solid #ddd; }
+
+h2.sec_title {
+  text-align: center;
+  font-size: 3vw; }
+
+.line {
+  width: 6%;
+  height: 2px;
+  background: #ddd;
+  text-align: center;
+  margin-left: 47%;
+  margin-bottom: 10vw; }
+
+.cards {
+  margin-bottom: 10vw; }
+
+.movie_name {
+  text-align: center;
+  background-color: #eee;
+  padding: 5px; }
+
+.card:hover {
+  box-shadow: 0px 5px 20px 0px #4c5a5d36; }
+
+.card:hover, .heart_container img:hover {
+  z-index: 2;
+  -webkit-transition: all 250ms ease-in-out;
+  -webkit-transform: scale(1.17);
+  -ms-transition: all 250ms ease-in-out;
+  -ms-transform: scale(1.17);
+  -moz-transition: all 250ms ease-in-out;
+  -moz-transform: scale(1.17);
+  transition: all 250ms ease-in-out;
+  transform: scale(1.17); }
+
+.card, .heart_container img {
+  -webkit-transition: all 250ms ease-in-out;
+  -webkit-transform: scale(1);
+  -ms-transition: all 250ms ease-in-out;
+  -ms-transform: scale(1);
+  -moz-transition: all 250ms ease-in-out;
+  -moz-transform: scale(1);
+  transition: all 250ms ease-in-out;
+  transform: scale(1);
+  cursor: pointer; }
+
+.card img {
+  height: 30vw; }

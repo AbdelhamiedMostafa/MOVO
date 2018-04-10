@@ -134,7 +134,7 @@
     padding: 10px 30px;
     border-radius: 0;
     transition: 200ms ease-in-out;
-		border: 2px solid rgb(221,221,221);
+		border: 2px solid #ddd;
 
 	}
 	.main_btn {
