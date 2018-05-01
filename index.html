@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>MOVO</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/lib/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
   </head>
   <body>
 
     <header>
       <nav>
+        <div class="logo">MOVO</div>
         <ul>
-          <li><a href="">home</a></li>
+          <div id="more"></div>
+          <li><a class="active" href="">home</a></li>
           <li><a href="">movies</a></li>
           <li><a href="">series</a></li>
           <li><a href="">contact</a></li>
@@ -18,28 +27,30 @@
       </nav>
       <section>
         <div class="welcome-wrapper">
-          <h2 class="welcome-msg">
+          <div class="welcome-msg">
             <span class="bold">MOVO the most safe website</span> to enjoy movies with your family
-          </h2>
+          </div>
         </div>
       </section>
     </header>
 
     <section>
       <div class="latest-movies">
-        <title>latest movies</title>
-        <div class="cards-wrapper">
-          <div class="card">
-            <img src="" alt="" class="movie-img">
-            <div class="movie-name">movie1</div>
-          </div>
-          <div class="card">
-            <img src="" alt="" class="movie-img">
-            <div class="movie-name">movie2</div>
-          </div>
-          <div class="card">
-            <img src="" alt="" class="movie-img">
-            <div class="movie-name">movie3</div>
+        <div class="title">latest movies</div>
+        <div class="cards-wrapper container">
+          <div class="row">
+            <div class="card col">
+              <img src="https://cdn.cinematerial.com/p/297x/9ebaqxve/maze-runner-the-death-cure-movie-poster-md.jpg" alt="" class="movie-img">
+              <div class="movie-name">movie1</div>
+            </div>
+            <div class="card col">
+              <img src="http://www.joblo.com/posters/images/full/Spiderman-poster-7-large.jpg" alt="" class="movie-img">
+              <div class="movie-name">movie2</div>
+            </div>
+            <div class="card col">
+              <img src="http://blog.karachicorner.com/wp-content/uploads/2013/04/large/TheWolverine+movie+posters.jpg" alt="" class="movie-img">
+              <div class="movie-name">movie3</div>
+            </div>
           </div>
         </div>
       </div>
@@ -74,6 +85,10 @@
       </div>
       <div class="credits">copyrights &copy; 2018 made with <span class="heart">&hearts;</span> by abdelhamied mostafa</div>
     </footer>
+
+    <script type="text/javascript" src="assets/lib/jquery.js"></script>
+    <script type="text/javascript" src="assets/lib/fontawesome.js"></script>
+
 
   </body>
 </html>

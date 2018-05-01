@@ -1,0 +1,86 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+.logo{
+  font-size: 44px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 20px;
+}
+ul{
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+  padding-top: 20px;
+}
+li{
+  display: inline;
+  /* background-color: gray; */
+  margin: 0;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+li a{
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  /* color: white; */
+}
+span.bold{
+  font-weight: bold;
+}
+.welcome-msg{
+  font-size: 40px;
+  max-width: 800px;
+}
+.welcome-wrapper{
+  margin-top: 200px;
+  margin-left: 100px;
+}
+header{
+  background: linear-gradient(#00000099,#00000099),url('https://drinks-dvq6ncf.netdna-ssl.com//wordpress/wp-content/uploads/2017/08/67d329c9aedc952ed43d67f4f88493da6be3b185.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-bottom: 320px;
+}
+.title{
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid #15d094;
+  margin: 0 44%;
+  margin-bottom: 25px;
+}
+.card{
+  border: 0;
+}
+.card img{
+  height: 500px;
+}
+nav a{
+  color: white;
+  font-weight: normal;
+}
+nav a:hover{
+  color: white;
+  text-decoration: none;
+}
+li a:hover, .active{
+  border-bottom: 2px #15d094 solid;
+}
+.active{
+  font-weight: bold;
+}
+.movie-name{
+  text-align: center;
+  background: #eee;
+  padding: 10px;
+}
+.latest-movies{
+  margin-top: 50px;
+}
