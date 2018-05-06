@@ -28,67 +28,41 @@
 
     </header>
 
-    <section>
-      <div class="form">
-        <ul class="tab-group">
-          <li class="tab active"><a href="#signup">Sign Up</a></li>
-          <li class="tab"><a href="#login">Log In</a></li>
-        </ul>
-        <div class="tab-content">
-          <div id="signup">
-            <h1>Sign Up for Free</h1>
-            <form action="/" method="post">
-            <div class="top-row">
-              <div class="field-wrap">
-                <label>
-                  First Name<span class="req">*</span>
-                </label>
-                <input type="text" required autocomplete="off" />
-              </div>
-              <div class="field-wrap">
-                <label>
-                  Last Name<span class="req">*</span>
-                </label>
-                <input type="text"required autocomplete="off"/>
-              </div>
-            </div>
-            <div class="field-wrap">
-              <label>
-                Email Address<span class="req">*</span>
-              </label>
-              <input type="email"required autocomplete="off"/>
-            </div>
-            <div class="field-wrap">
-              <label>
-                Set A Password<span class="req">*</span>
-              </label>
-              <input type="password"required autocomplete="off"/>
-            </div>
-            <button type="submit" class="button button-block"/>Get Started</button>
-            </form>
-          </div>
+    <section class="join-form-container">
 
-          <div id="login">
-            <h1>Welcome Back!</h1>
-            <form action="/" method="post">
-              <div class="field-wrap">
-              <label>
-                Email Address<span class="req">*</span>
-              </label>
-              <input type="email"required autocomplete="off"/>
-            </div>
-            <div class="field-wrap">
-              <label>
-                Password<span class="req">*</span>
-              </label>
-              <input type="password"required autocomplete="off"/>
-            </div>
-            <p class="forgot"><a href="#">Forgot Password?</a></p>
-            <button class="button button-block"/>Log In</button>
-            </form>
+      <div class="tabs-container">
+        <button id="login" class="active-tab" type="button" name="button">login</button>
+        <button id="signup" class="" type="button" name="button">Signup</button>
+      </div>
+
+      <div id="login-form">
+        <form class="" action="" method="get">
+          <div class="name-container">
+            <label class="form-label">e-mail</label> <input class="input-field" type="email" name="name" value="">
           </div>
-        </div><!-- tab-content -->
-      </div> <!-- /form -->
+          <div class="pass-container">
+            <label class="form-label">password</label> <input class="input-field" type="password" name="pass" value="">
+          </div>
+          <input class="btn main login" type="submit" name="" value="login">
+        </form>
+      </div>
+      <div id="signup-form">
+        <form class="" action="" method="get">
+          <div class="name-container">
+            <label class="form-label">name</label> <input class="input-field" type="text" name="name" value="">
+          </div>
+          <div class="email-container">
+            <label class="form-label">e-mail</label> <input class="input-field" type="email" name="name" value="">
+          </div>
+          <div class="pass-container">
+            <label class="form-label">password</label> <input class="input-field" type="password" name="pass" value="">
+          </div>
+          <div class="pass-container">
+            <label class="form-label">re-password</label> <input class="input-field" type="password" name="pass" value="">
+          </div>
+          <input class="btn main login" type="submit" name="" value="signup">
+        </form>
+      </div>
     </section>
 
 

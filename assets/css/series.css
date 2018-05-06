@@ -31,10 +31,11 @@ span.bold{
   font-weight: bold;
 }
 header{
+  background: linear-gradient(#00000099,#00000099),url('https://drinks-dvq6ncf.netdna-ssl.com//wordpress/wp-content/uploads/2017/08/67d329c9aedc952ed43d67f4f88493da6be3b185.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #222;
+  color: #eee;
 }
 .title{
   font-size: 24px;
@@ -74,11 +75,11 @@ header{
   height: 520px;
 }
 nav a{
-  color: #222;
+  color: #eee;
   font-weight: normal;
 }
 nav a:hover{
-  color: #222;
+  color: #eee;
   text-decoration: none;
 }
 li a:hover, .active{
