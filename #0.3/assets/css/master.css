@@ -1,0 +1,349 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+button:hover{
+  transition: all 120ms ease-in;
+}
+
+/* nav */
+/* Remove dark-nav class from nav tag to see the light version  */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  font-family: arial;
+}
+header {
+  height: 800px;
+  background: linear-gradient(#00000099,#00000099),url('https://drinks-dvq6ncf.netdna-ssl.com//wordpress/wp-content/uploads/2017/08/67d329c9aedc952ed43d67f4f88493da6be3b185.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  /* padding-bottom: 170px; */
+}
+
+.container:after, .container:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Start navbar */
+.nav {
+  /* background-color: #f8f8f8; */
+  /* border-bottom: 1px solid #ececec; */
+  min-height: 50px;
+  height: auto;
+}
+.nav .nav-heading {float: left}
+
+.nav .nav-heading #toggle-nav {
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: none;
+  display: none;
+  background-color: transparent;
+}
+.nav .nav-heading > a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 60px;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+/* Start menu */
+.nav .menu {
+  float: right;
+}
+.nav .menu:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.nav .list {
+  float: right;
+  margin: 0;
+}
+.nav .list > li {
+  float: left;
+  list-style: none;
+}
+.nav .list > li > a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+.nav .list > li.active > a {
+  font-weight: 700;
+}
+.nav .list >li{
+  text-align: center;
+}
+.nav .list > li > a:hover{
+  border-bottom: 2px solid #27D1C2;
+}
+
+a#toggle-nav,a#toggle-nav:hover{
+  color: #222;
+  cursor: pointer;
+}
+.dark-back{
+  background: #1b2120;
+}
+
+@media (max-width: 1200px){
+  .container{
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .dark-back{
+    background: transparent;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: #1b2120;
+  }
+  .menu.show{
+    display: block;
+  }
+  .menu ul{
+    width: 100%;
+  }
+  .menu ul li{
+    width: 100%;
+  }
+  .nav .list > li{
+    text-align: left;
+  }
+  nav{
+    /* background: #1b2120f6; */
+  }
+  .nav .list > li > a{
+    padding-left: 45px;
+  }
+  .menu ul li:hover{
+    background: #333;
+    border-bottom: 0;
+  }
+  .nav .list > li.active{
+    background: #27D1C2;
+  }
+  .nav .list > li > a,.nav .list > li > a:hover{
+    border-bottom: 0;
+  }
+  .nav .nav-heading #toggle-nav{
+    display: inline-block;
+    color: #fff;
+  }
+  .nav #nav ul li{
+    width: 100%;
+  }
+}
+
+
+
+
+
+.latest-movies{
+  margin: 50px 0;
+  text-align: center;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+
+
+h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.slick-dots li {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.slick-dots li.slick-active button {
+  background-color: black;
+}
+.slick-dots li button {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: #999;
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.slick-dots li :hover {
+  background-color: black;
+}
+
+/* Custom Arrow */
+
+.arrow{
+  color: #fff;
+  position: absolute;
+  top: 38%;
+  font-size: 2.5em;
+}
+.arrow:hover{
+  cursor: pointer;
+  color: #eee;
+}
+
+.prev {
+  left: .5em;
+}
+.next {
+  right: .5em;
+}
+
+
+
+
+
+span.bold{
+  font-weight: bold;
+}
+.welcome-msg{
+  font-size: 50px;
+  margin: 0 10vw;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .welcome-msg{
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .welcome-msg{
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .welcome-msg{
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .welcome-msg{
+    font-size: 18px;
+  }
+}
+
+.welcome-wrapper{
+  margin-top: 200px;
+}
+
+.title{
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.active{
+  font-weight: bold;
+}
+
+.btns-wrapper{
+  margin-top: 100px;
+  text-align: center;
+}
+.btn{
+  padding: 12px 30px;
+  font-size: 20px;
+  margin: auto 4vw;
+}
+.main{
+  background-color: #27d1c2;
+  border-radius: 30px;
+  color: #eee;
+}
+.main:hover{
+  background: #eee;
+  color: #27d1c2;
+  border-radius: 0;
+}
+.sec{
+  border-radius: 0px;
+  background: #eee;
+  color: #222;
+}
+.sec:hover{
+  border-radius: 30px;
+  /* background: #eee; */
+  color: #32d094;
+  background: #eee;
+}
+footer{
+  background: #27D1C2;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  overflow: hidden;
+  color: white;
+}
+.social{
+  display: inline-block;
+  margin: 0 30px;
+  font-size: 32px;
+}
+.foot-nav ul li a,.foot-nav ul li a:hover{
+  color: white;
+  text-decoration: none;
+}
+.foot-nav{
+  margin-top: 30px;
+}
+.foot-nav ul li{
+  display: inline-block;
+  margin: 0 30px;
+  font-size: 22px;
+}
+footer .line{
+  height: 2px;
+  background: #fff;
+  margin: 30px 48%;
+}
+.bold{
+  font-weight: 900;
+}
+.quote{
+  font-size: 26px;
+  text-transform: uppercase;
+}
